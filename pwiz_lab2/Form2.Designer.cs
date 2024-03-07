@@ -31,43 +31,57 @@
             button1 = new Button();
             button2 = new Button();
             textBox1 = new TextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(380, 112);
+            button1.Location = new Point(139, 193);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(133, 62);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Komputer";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(519, 142);
+            button2.Location = new Point(297, 193);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(127, 62);
             button2.TabIndex = 1;
-            button2.Text = "button2";
+            button2.Text = "Monitor";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(642, 254);
+            textBox1.Location = new Point(463, 232);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(100, 23);
             textBox1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(518, 202);
+            label1.Name = "label1";
+            label1.Size = new Size(45, 15);
+            label1.TabIndex = 3;
+            label1.Text = "Cena zl";
+            label1.Click += label1_Click;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(textBox1);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "Form2";
-            Text = "Form2";
+            Text = "Kalkulator Zestawow Komputerowych";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -77,5 +91,6 @@
         private Button button1;
         private Button button2;
         private TextBox textBox1;
+        private Label label1;
     }
 }

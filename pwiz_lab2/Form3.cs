@@ -47,12 +47,39 @@ namespace pwiz_lab2
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.form2.computerPrice= (int.Parse(textBox1.Text)+int.Parse(textBox2.Text));
+            this.form2.textBox1.Text=(int.Parse(this.textBox1.Text) + int.Parse(this.textBox2.Text)).ToString();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            List<int> list = new List<int>();
+            list.Add(160);
+            list.Add(270);
+            list.Add(380);
+            textBox1.Text = list[comboBox1.SelectedIndex].ToString();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            this.textBox2.Text = 199.ToString();
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            this.textBox2.Text = 299.ToString();
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            this.textBox2.Text = 399.ToString();
         }
     }
 }

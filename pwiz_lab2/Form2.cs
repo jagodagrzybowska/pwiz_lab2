@@ -12,6 +12,9 @@ namespace pwiz_lab2
 {
     public partial class Form2 : Form
     {
+        public int computerPrice;
+        public int monitorPrice;
+
         private Form2 form2;
 
         public Form2()
